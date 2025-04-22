@@ -29,30 +29,30 @@ Follow these steps to run the project locally:
 
 1. **Clone the Repository**
 ## 2.**Install Dependencies**
-   using npm install
+  - using npm install
 ## 3**Create .env File**
-   DATABASE_URL="your_database_url_here"
-   JWT_SECRET="your_jwt_secret_here"
-   PORT=5000
+  - DATABASE_URL="your_database_url_here"
+   -JWT_SECRET="your_jwt_secret_here"
+   -PORT=5000
    
  ## 4**Set Up Prisma**
-  npx prisma init          # If Prisma isn't initialized
-  npx prisma migrate dev   # Create DB tables and apply migrations
-  npx prisma generate      # Generate Prisma client
-  npx db push
+  -npx prisma init          # If Prisma isn't initialized
+ - npx prisma migrate dev   # Create DB tables and apply migrations
+  -npx prisma generate      # Generate Prisma client
+  -npx db push
  ## 5**Run the Project**
-  using npm run dev
+ - using npm run dev
 
  ## 6 ** Project Structure**
-   ├── lib/
-   │   └── db.js               # Prisma DB setup
-   ├── middleware/
-   │   └── auth.middleware.js  # JWT authentication middleware
-   ├── routes/
-   │   └── blog.routes.js      # Blog-related routes
-   ├── .env                    # Environment variables
-   ├── index.js                # Application entry point
-   └── README.md               # Project documentation
+  - ├── lib/
+   -│   └── db.js               # Prisma DB setup
+   -├── middleware/
+   -│   └── auth.middleware.js  # JWT authentication middleware
+   -├── routes/
+   -│   └── blog.routes.js      # Blog-related routes
+   -├── .env                    # Environment variables
+   -├── index.js                # Application entry point
+   -└── README.md               # Project documentation
 
 
 
