@@ -4,11 +4,11 @@ import authMiddelwear from '../middelwear/auth.middelwear.js';
 
 const router=Router();
 
-router.get('/myBlog',async (req, res) => {
+router.get('/myBlog',authMiddelwear,async (req, res) => {
     try {
         console.log("sdjlkfajdlkgd")
         console.log("user",req.body.user)
-        const id = parseInt(req.user.id);
+        const id = parseInt(req.body.user.id);
         console.log("id",id)
         if(!id){
             return res.status(400).json({message:'Please provide the blog id!'});
